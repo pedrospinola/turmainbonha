@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  turmadainbonha
+//  AppTurmaDaInbonha
 //
 //  Created by Pedro Henrique Spínola de Assis on 23/06/20.
 //  Copyright © 2020 Turma Da Inbonha. All rights reserved.
