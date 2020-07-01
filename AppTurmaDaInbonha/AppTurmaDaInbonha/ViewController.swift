@@ -15,6 +15,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func DarkModeButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func PreferencesButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func PrivacyButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func AboutButton(_ sender: Any) {
+    }
+    
+    
+    @IBAction func Supportbutton(_ sender: Any) {
+    }
+    
+    
+  
+    
+    
+    
 }
-

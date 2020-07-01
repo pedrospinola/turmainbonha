@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0474D50124AD1E6700E1ED6C /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0474D50024AD1E6700E1ED6C /* Config.storyboard */; };
 		AC41EC4024A24A0B00D71ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */; };
 		AC41EC4224A24A0B00D71ED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */; };
 		AC41EC4424A24A0B00D71ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC4324A24A0B00D71ED6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0474D50024AD1E6700E1ED6C /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
 		AC41EC3C24A24A0B00D71ED6 /* AppTurmaDaInbonha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTurmaDaInbonha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				AC41EC4824A24A0C00D71ED6 /* Assets.xcassets */,
 				AC41EC4A24A24A0C00D71ED6 /* LaunchScreen.storyboard */,
 				AC41EC4D24A24A0C00D71ED6 /* Info.plist */,
+				0474D50024AD1E6700E1ED6C /* Config.storyboard */,
 			);
 			path = AppTurmaDaInbonha;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC41EC4C24A24A0C00D71ED6 /* LaunchScreen.storyboard in Resources */,
+				0474D50124AD1E6700E1ED6C /* Config.storyboard in Resources */,
 				AC41EC4924A24A0C00D71ED6 /* Assets.xcassets in Resources */,
 				AC41EC4724A24A0B00D71ED6 /* Main.storyboard in Resources */,
 			);
