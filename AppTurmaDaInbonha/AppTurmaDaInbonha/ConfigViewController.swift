@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ConfigViewController.swift
 //  AppTurmaDaInbonha
 //
 //  Created by Pedro Henrique Spínola de Assis on 23/06/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConfigViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

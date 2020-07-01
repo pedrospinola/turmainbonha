@@ -8,16 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0474D50124AD1E6700E1ED6C /* Config.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0474D50024AD1E6700E1ED6C /* Config.storyboard */; };
+		AC17359E24A612A400FB7B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC41EC4824A24A0C00D71ED6 /* Assets.xcassets */; };
+		AC1735A224ACC5DD00FB7B2D /* Cell_Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1735A124ACC5DD00FB7B2D /* Cell_Perfil.swift */; };
+		AC1E923124A54B4300152008 /* Perfil_Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1E923024A54B4300152008 /* Perfil_Storyboard.storyboard */; };
 		AC41EC4024A24A0B00D71ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */; };
 		AC41EC4224A24A0B00D71ED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */; };
 		AC41EC4424A24A0B00D71ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC41EC4324A24A0B00D71ED6 /* ViewController.swift */; };
 		AC41EC4724A24A0B00D71ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC41EC4524A24A0B00D71ED6 /* Main.storyboard */; };
-		AC41EC4924A24A0C00D71ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC41EC4824A24A0C00D71ED6 /* Assets.xcassets */; };
 		AC41EC4C24A24A0C00D71ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC41EC4A24A24A0C00D71ED6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0474D50024AD1E6700E1ED6C /* Config.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Config.storyboard; sourceTree = "<group>"; };
+		AC1735A124ACC5DD00FB7B2D /* Cell_Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_Perfil.swift; sourceTree = "<group>"; };
+		AC1E923024A54B4300152008 /* Perfil_Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil_Storyboard.storyboard; sourceTree = "<group>"; };
 		AC41EC3C24A24A0B00D71ED6 /* AppTurmaDaInbonha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTurmaDaInbonha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +43,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC1E922024A27ACA00152008 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AC41EC4524A24A0B00D71ED6 /* Main.storyboard */,
+				AC1E923024A54B4300152008 /* Perfil_Storyboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AC1E922124A27AF400152008 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC41EC4324A24A0B00D71ED6 /* ViewController.swift */,
+				AC1735A124ACC5DD00FB7B2D /* Cell_Perfil.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AC1E922724A2884900152008 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */,
+				AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		AC41EC3324A24A0B00D71ED6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +89,9 @@
 		AC41EC3E24A24A0B00D71ED6 /* AppTurmaDaInbonha */ = {
 			isa = PBXGroup;
 			children = (
-				AC41EC3F24A24A0B00D71ED6 /* AppDelegate.swift */,
-				AC41EC4124A24A0B00D71ED6 /* SceneDelegate.swift */,
-				AC41EC4324A24A0B00D71ED6 /* ViewController.swift */,
-				AC41EC4524A24A0B00D71ED6 /* Main.storyboard */,
+				AC1E922724A2884900152008 /* Delegates */,
+				AC1E922124A27AF400152008 /* Classes */,
+				AC1E922024A27ACA00152008 /* Storyboards */,
 				AC41EC4824A24A0C00D71ED6 /* Assets.xcassets */,
 				AC41EC4A24A24A0C00D71ED6 /* LaunchScreen.storyboard */,
 				AC41EC4D24A24A0C00D71ED6 /* Info.plist */,
@@ -130,7 +160,8 @@
 			files = (
 				AC41EC4C24A24A0C00D71ED6 /* LaunchScreen.storyboard in Resources */,
 				0474D50124AD1E6700E1ED6C /* Config.storyboard in Resources */,
-				AC41EC4924A24A0C00D71ED6 /* Assets.xcassets in Resources */,
+				AC1E923124A54B4300152008 /* Perfil_Storyboard.storyboard in Resources */,
+				AC17359E24A612A400FB7B2D /* Assets.xcassets in Resources */,
 				AC41EC4724A24A0B00D71ED6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC41EC4424A24A0B00D71ED6 /* ViewController.swift in Sources */,
+				AC1735A224ACC5DD00FB7B2D /* Cell_Perfil.swift in Sources */,
 				AC41EC4024A24A0B00D71ED6 /* AppDelegate.swift in Sources */,
 				AC41EC4224A24A0B00D71ED6 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +320,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 389X9SAV47;
 				INFOPLIST_FILE = AppTurmaDaInbonha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TDI.AppTurmaDaInbonha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,7 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 389X9SAV47;
 				INFOPLIST_FILE = AppTurmaDaInbonha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,6 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TDI.AppTurmaDaInbonha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
