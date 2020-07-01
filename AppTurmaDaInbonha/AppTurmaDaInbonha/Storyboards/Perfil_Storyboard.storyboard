@@ -180,7 +180,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem image="Efeitos" id="XFp-gH-W03"/>
-                                    <tabBarItem image="Edição" id="rfd-OQ-fZ6"/>
+                                    <tabBarItem image="Edition" id="rfd-OQ-fZ6"/>
                                     <tabBarItem image="Perfil" id="zJu-Zx-xNh">
                                         <color key="badgeColor" red="0.91372549020000005" green="0.38823529410000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tabBarItem>
@@ -216,7 +216,7 @@
     <color key="tintColor" red="0.91372549020000005" green="0.38823529410000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="Ajustes" width="136" height="49"/>
-        <image name="Edição" width="136" height="49"/>
+        <image name="Edition" width="136" height="49"/>
         <image name="Efeitos" width="136" height="49"/>
         <image name="Perfil" width="136" height="49"/>
         <image name="Rectangle 14" width="110" height="48"/>
