@@ -8,6 +8,118 @@
 
 import UIKit
 
+//Tela Explorar
+
+class explorarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
+    
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var firstCollection: UICollectionView!
+    @IBOutlet weak var secondCollection: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    
+    var items = ["  Neon 1", "  Neon 2", "  Neon 3", "  Neon 4"]
+    var effectImages: [UIImage] = [
+         UIImage(named: "tyler-lastovich-3shfnfzdFVc-unsplash")!,
+         UIImage(named: "h-heyerlein-ndja2LJ4IcM-unsplash")!,
+         UIImage(named:"drew-beamer-3SIXZisims4-unsplash")!,
+         UIImage(named:"jiroe-b9kh72kOcdM-unsplash")!
+     ]
+    
+    var items2 = ["  Old School", "  Too Busy", "  Ocean", "  Glow!"]
+    var effectImages2: [UIImage] = [
+        UIImage(named: "joshua-newton-7qjqQjt7zXQ-unsplash")!,
+        UIImage(named: "monil-andharia-0xVrOF1oaPU-unsplash")!,
+        UIImage(named: "tim-zankert-82xVrlfYs1w-unsplash")!,
+        UIImage(named: "zbynek-burival-2tX5Wgh5XIA-unsplash")!]
+    
+    let reuseIdentifier = "cell"
+    
+    let secondIdentifier = "secondCell"
+    // also enter this string as the cell identifier in the storyboard
+    
+    
+    var filteredData: [String]!
+    var filteredImage: [UIImage]!
+    var filteredData2: [String]!
+    var filteredImage2: [UIImage]!
+
+    
+    
+    // MARK: - UICollectionViewDataSource protocol
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if collectionView == self.firstCollection {
+            return filteredData.count
+        }
+
+        return filteredData2.count
+
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            if collectionView == self.firstCollection {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! explorarCollectionView1
+                // Set up cell
+       cell.displayConten1(image: filteredImage[indexPath.item], title: filteredData[indexPath.item])
+       cell.layer.cornerRadius = 8
+
+       return cell
+            }
+    
+
+        else {
+        let secondCell = collectionView.dequeueReusableCell(withReuseIdentifier: "secondCell", for: indexPath) as! explorarCollectionView2
+       secondCell.displayConten2(image: filteredImage2[indexPath.item], title: filteredData2[indexPath.item])
+       secondCell.layer.cornerRadius = 8
+
+       return secondCell
+            }
+}
+
+    // MARK: - UICollectionViewDelegate protocol
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
+    }
+
+    
+    // MARK: - UISearchBarDelegate protocol
+    
+     //This method updates filteredData based on the text in the Search Box
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//
+//        filteredData = searchText.isEmpty ? items : items.filter { (item: String) -> Bool in
+//            // If dataItem matches the searchText, return true to include it
+//            return item.range(of: searchText, options: .caseInsensitive, range: nil, locale: nil) != nil
+//        }
+//
+//        firstCollection.reloadData()
+//    }
+    // MARK: - viewDidLoad
+    
+    override func viewDidLoad() {
+    super.viewDidLoad()
+    
+        
+        firstCollection.dataSource = self
+        firstCollection.delegate = self
+        secondCollection.dataSource = self
+        secondCollection.delegate = self
+        //searcBar.delegate = self
+        filteredData = items
+        filteredImage = effectImages
+        filteredData2 = items2
+        filteredImage2 = effectImages2
+        scrollView.contentSize = CGSize(width: 331, height: 1300)
+    }
+}
+
+
+
+      // MARK: - Tela do Perfil
 
 //Tela do Perfil:
 
