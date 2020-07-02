@@ -179,12 +179,12 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <tabBarItem image="Efeitos" id="XFp-gH-W03"/>
-                                    <tabBarItem image="Edition" id="rfd-OQ-fZ6"/>
-                                    <tabBarItem image="Perfil" id="zJu-Zx-xNh">
+                                    <tabBarItem title="" image="Efeitos" id="XFp-gH-W03"/>
+                                    <tabBarItem title="" image="Edition" id="rfd-OQ-fZ6"/>
+                                    <tabBarItem title="" image="Perfil" id="zJu-Zx-xNh">
                                         <color key="badgeColor" red="0.91372549020000005" green="0.38823529410000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tabBarItem>
-                                    <tabBarItem image="Ajustes" id="DQu-xk-Le2"/>
+                                    <tabBarItem title="" image="Ajustes" id="DQu-xk-Le2"/>
                                 </items>
                             </tabBar>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="buttonMore" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-eD-jd6">
