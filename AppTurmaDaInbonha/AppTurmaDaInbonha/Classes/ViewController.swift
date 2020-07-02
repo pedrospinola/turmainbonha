@@ -13,12 +13,10 @@ import UIKit
 class explorarViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UISearchBarDelegate {
     
     
-
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var firstCollection: UICollectionView!
     @IBOutlet weak var secondCollection: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
-    
     
     
     var items = ["  Neon 1", "  Neon 2", "  Neon 3", "  Neon 4"]
